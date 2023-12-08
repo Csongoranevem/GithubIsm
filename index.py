@@ -8,11 +8,14 @@ def prim():
         return False
     if szam==2:
         return True
-    for i in range((szam/2)+1):
+    for i in range(szam):
         if szam%i==0:
             return False
-        else:
-            return True
+            
+    return True
 
-
+if prim==True:
+    print("Ez prim.")
+else:
+    print("Ez nem prim.")
     
