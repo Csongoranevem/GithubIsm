@@ -12,3 +12,7 @@ for i in range(szam):
         prim=False
     else:
         prim=True
+
+if prim==True:
+    print("Ez prim.")
+
