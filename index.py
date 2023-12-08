@@ -15,7 +15,7 @@ for i in range(2,szam):
     else:
         prim=True
 
-if prim:
+if prim and szam!=2 and szam%2!=0:
     print("Ez prim.")
 else:
     print("Ez nem prim.")
