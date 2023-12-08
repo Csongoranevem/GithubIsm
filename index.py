@@ -6,8 +6,10 @@ szam=int(input("Írj be egy számot: "))
 prim=True
 if szam%2==0:
     prim=False
+if szam==2:
+    prim=True
 
-for i in range(szam):
+for i in range(2,szam):
     if szam%i==0:
         prim=False
     else:
@@ -15,4 +17,6 @@ for i in range(szam):
 
 if prim==True:
     print("Ez prim.")
+else:
+    print("Ez nem prim.")
 
