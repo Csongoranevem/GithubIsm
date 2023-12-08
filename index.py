@@ -4,19 +4,22 @@ szam=int(input("Írj be egy számot: "))
 
 
 prim=False
-if szam%2==0:
-    print("Ez nem prim.")
 if szam==2:
     print("Ez prim.")
-
-for i in range(2,szam):
-    if szam%i==0:
-        break
+elif szam%2==0:
+    print("Ez nem prim.")
+else:
+    for i in range(2,szam):
+        if szam%i==0:
+            break
     else:
         prim=True
 
-if prim and szam!=2 and szam%2!=0:
-    print("Ez prim.")
-else:
-    print("Ez nem prim.")
+    if prim:
+        print("Ez prim.")
+    else:
+        print("Ez nem prim.")
+
+
+
 
