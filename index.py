@@ -4,7 +4,9 @@ szam=int(input("Írj be egy számot: "))
 
 
 prim=False
-if szam==2:
+if szam==1:
+    print("Ez nem prim.")
+elif szam==2:
     print("Ez prim.")
 elif szam%2==0:
     print("Ez nem prim.")
