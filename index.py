@@ -11,7 +11,7 @@ elif szam==2:
 elif szam%2==0:
     print("Ez nem prim.")
 else:
-    for i in range(2,szam):
+    for i in range(2,szam//2):
         if szam%i==0:
             break
     else:
